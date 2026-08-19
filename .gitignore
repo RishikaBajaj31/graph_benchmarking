@@ -1,0 +1,42 @@
+# ---- Secrets (NEVER commit these) ----
+.env
+*.env.local
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Test / coverage artefacts ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Benchmark output ----
+results/
+
+# ---- Dataset raw files (large; do not commit) ----
+data/raw/
+
+# ---- IDE / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---- Logs ----
+*.log
+logs/

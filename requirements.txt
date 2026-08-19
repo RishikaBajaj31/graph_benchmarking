@@ -1,0 +1,28 @@
+# Graph Database Cloud Benchmarking — Python Dependencies
+# Pin all versions for reproducibility
+
+# Official Neo4j Python driver (used for CognoDB + Neo4j Aura + Memgraph)
+neo4j==5.25.0
+
+# Environment variable loading from .env files
+python-dotenv==1.0.1
+
+# HTTP requests (used by REST-based adapters in later phases)
+requests==2.32.3
+
+# Data analysis and stats
+numpy==2.1.3
+pandas==2.2.3
+
+# Rich terminal output / progress bars
+rich==13.9.4
+
+# YAML config support (for workload definitions)
+PyYAML==6.0.2
+
+# Official FalkorDB Python client (used for FalkorDB local Docker)
+falkordb==1.0.10
+
+# Official ArangoDB Python client (used for ArangoDB local Docker)
+python-arango==8.1.0
+
