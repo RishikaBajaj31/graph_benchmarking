@@ -1,0 +1,86 @@
+database,workload,metric,value,unit,details
+ArangoDB,Load Throughput,Total Load Time,6.07,sec,"62,679 nodes + 125,000 rels"
+ArangoDB,Load Throughput,Node Ingest Rate,10331.42,nodes/sec,Batch ingestion
+ArangoDB,Load Throughput,Relationship Ingest Rate,20603.84,rels/sec,Batch ingestion
+ArangoDB,1-Hop Traversal,p50 Latency,55.5114,ms,"10 warmup, 100 measured"
+ArangoDB,1-Hop Traversal,p95 Latency,64.3297,ms,"10 warmup, 100 measured"
+ArangoDB,2-Hop Traversal,p50 Latency,61.7437,ms,"10 warmup, 100 measured"
+ArangoDB,2-Hop Traversal,p95 Latency,70.2503,ms,"10 warmup, 100 measured"
+ArangoDB,3-Hop Traversal,p50 Latency,59.527,ms,"10 warmup, 100 measured"
+ArangoDB,3-Hop Traversal,p95 Latency,67.1728,ms,"10 warmup, 100 measured"
+ArangoDB,Point Lookup,p50 Latency,58.9012,ms,Key lookup user_id
+ArangoDB,Point Lookup,p95 Latency,65.2832,ms,Key lookup user_id
+ArangoDB,Indexed Filtered Lookup,p50 Latency,43.4713,ms,WHERE age=25 AND gender=1 LIMIT 100
+ArangoDB,Indexed Filtered Lookup,p95 Latency,45.8815,ms,WHERE age=25 AND gender=1 LIMIT 100
+ArangoDB,Aggregation,p50 Latency,67.0247,ms,"GROUP BY gender, COUNT, AVG(age)"
+ArangoDB,Aggregation,p95 Latency,74.555,ms,"GROUP BY gender, COUNT, AVG(age)"
+ArangoDB,Concurrent Mixed R/W,Sustained QPS,17.96,QPS,"4 workers, 80% read / 20% write, 10s"
+ArangoDB,Resource Footprint,Observable Memory RSS,229.9MiB / 256MiB,Memory,256 MB (Limit)
+FalkorDB,Load Throughput,Total Load Time,12.32,sec,"62,679 nodes + 125,000 rels"
+FalkorDB,Load Throughput,Node Ingest Rate,5087.4,nodes/sec,Batch ingestion
+FalkorDB,Load Throughput,Relationship Ingest Rate,10145.74,rels/sec,Batch ingestion
+FalkorDB,1-Hop Traversal,p50 Latency,0.9704,ms,"10 warmup, 100 measured"
+FalkorDB,1-Hop Traversal,p95 Latency,2.0402,ms,"10 warmup, 100 measured"
+FalkorDB,2-Hop Traversal,p50 Latency,0.8925,ms,"10 warmup, 100 measured"
+FalkorDB,2-Hop Traversal,p95 Latency,1.6594,ms,"10 warmup, 100 measured"
+FalkorDB,3-Hop Traversal,p50 Latency,0.961,ms,"10 warmup, 100 measured"
+FalkorDB,3-Hop Traversal,p95 Latency,2.3834,ms,"10 warmup, 100 measured"
+FalkorDB,Point Lookup,p50 Latency,0.9148,ms,Key lookup user_id
+FalkorDB,Point Lookup,p95 Latency,1.7006,ms,Key lookup user_id
+FalkorDB,Indexed Filtered Lookup,p50 Latency,2.2411,ms,WHERE age=25 AND gender=1 LIMIT 100
+FalkorDB,Indexed Filtered Lookup,p95 Latency,2.9645,ms,WHERE age=25 AND gender=1 LIMIT 100
+FalkorDB,Aggregation,p50 Latency,15.58,ms,"GROUP BY gender, COUNT, AVG(age)"
+FalkorDB,Aggregation,p95 Latency,59.8304,ms,"GROUP BY gender, COUNT, AVG(age)"
+FalkorDB,Concurrent Mixed R/W,Sustained QPS,1150.23,QPS,"4 workers, 80% read / 20% write, 10s"
+FalkorDB,Resource Footprint,Observable Memory RSS,118.3MiB / 256MiB,Memory,256 MB (Limit)
+Memgraph,Load Throughput,Total Load Time,7.9,sec,"62,679 nodes + 125,000 rels"
+Memgraph,Load Throughput,Node Ingest Rate,7935.87,nodes/sec,Batch ingestion
+Memgraph,Load Throughput,Relationship Ingest Rate,15826.41,rels/sec,Batch ingestion
+Memgraph,1-Hop Traversal,p50 Latency,1.1696,ms,"10 warmup, 100 measured"
+Memgraph,1-Hop Traversal,p95 Latency,2.0643,ms,"10 warmup, 100 measured"
+Memgraph,2-Hop Traversal,p50 Latency,1.07,ms,"10 warmup, 100 measured"
+Memgraph,2-Hop Traversal,p95 Latency,1.7132,ms,"10 warmup, 100 measured"
+Memgraph,3-Hop Traversal,p50 Latency,1.1293,ms,"10 warmup, 100 measured"
+Memgraph,3-Hop Traversal,p95 Latency,2.0256,ms,"10 warmup, 100 measured"
+Memgraph,Point Lookup,p50 Latency,1.1599,ms,Key lookup user_id
+Memgraph,Point Lookup,p95 Latency,1.7677,ms,Key lookup user_id
+Memgraph,Indexed Filtered Lookup,p50 Latency,3.9144,ms,WHERE age=25 AND gender=1 LIMIT 100
+Memgraph,Indexed Filtered Lookup,p95 Latency,5.0014,ms,WHERE age=25 AND gender=1 LIMIT 100
+Memgraph,Aggregation,p50 Latency,68.9322,ms,"GROUP BY gender, COUNT, AVG(age)"
+Memgraph,Aggregation,p95 Latency,78.0239,ms,"GROUP BY gender, COUNT, AVG(age)"
+Memgraph,Concurrent Mixed R/W,Sustained QPS,1349.01,QPS,"4 workers, 80% read / 20% write, 10s"
+Memgraph,Resource Footprint,Observable Memory RSS,406.2MiB / 1GiB,Memory,1024 MB (Limit)
+Neo4j AuraDB,Load Throughput,Total Load Time,62.16,sec,"62,679 nodes + 125,000 rels"
+Neo4j AuraDB,Load Throughput,Node Ingest Rate,1008.4,nodes/sec,Batch ingestion
+Neo4j AuraDB,Load Throughput,Relationship Ingest Rate,2011.05,rels/sec,Batch ingestion
+Neo4j AuraDB,1-Hop Traversal,p50 Latency,91.2436,ms,"10 warmup, 100 measured"
+Neo4j AuraDB,1-Hop Traversal,p95 Latency,96.167,ms,"10 warmup, 100 measured"
+Neo4j AuraDB,2-Hop Traversal,p50 Latency,91.6899,ms,"10 warmup, 100 measured"
+Neo4j AuraDB,2-Hop Traversal,p95 Latency,96.6598,ms,"10 warmup, 100 measured"
+Neo4j AuraDB,3-Hop Traversal,p50 Latency,91.5659,ms,"10 warmup, 100 measured"
+Neo4j AuraDB,3-Hop Traversal,p95 Latency,103.6372,ms,"10 warmup, 100 measured"
+Neo4j AuraDB,Point Lookup,p50 Latency,90.1534,ms,Key lookup user_id
+Neo4j AuraDB,Point Lookup,p95 Latency,95.6067,ms,Key lookup user_id
+Neo4j AuraDB,Indexed Filtered Lookup,p50 Latency,97.6307,ms,WHERE age=25 AND gender=1 LIMIT 100
+Neo4j AuraDB,Indexed Filtered Lookup,p95 Latency,140.1428,ms,WHERE age=25 AND gender=1 LIMIT 100
+Neo4j AuraDB,Aggregation,p50 Latency,117.4014,ms,"GROUP BY gender, COUNT, AVG(age)"
+Neo4j AuraDB,Aggregation,p95 Latency,125.1915,ms,"GROUP BY gender, COUNT, AVG(age)"
+Neo4j AuraDB,Concurrent Mixed R/W,Sustained QPS,36.57,QPS,"4 workers, 80% read / 20% write, 10s"
+Neo4j AuraDB,Resource Footprint,Observable Memory RSS,Not observable,Memory,Undisclosed (Free Tier)
+CognoDB Cloud,Load Throughput,Total Load Time,86.46,sec,"62,679 nodes + 125,000 rels"
+CognoDB Cloud,Load Throughput,Node Ingest Rate,724.96,nodes/sec,Batch ingestion
+CognoDB Cloud,Load Throughput,Relationship Ingest Rate,1445.78,rels/sec,Batch ingestion
+CognoDB Cloud,1-Hop Traversal,p50 Latency,248.7281,ms,"10 warmup, 100 measured"
+CognoDB Cloud,1-Hop Traversal,p95 Latency,261.7658,ms,"10 warmup, 100 measured"
+CognoDB Cloud,2-Hop Traversal,p50 Latency,249.8865,ms,"10 warmup, 100 measured"
+CognoDB Cloud,2-Hop Traversal,p95 Latency,267.5109,ms,"10 warmup, 100 measured"
+CognoDB Cloud,3-Hop Traversal,p50 Latency,267.9124,ms,"10 warmup, 100 measured"
+CognoDB Cloud,3-Hop Traversal,p95 Latency,325.2361,ms,"10 warmup, 100 measured"
+CognoDB Cloud,Point Lookup,p50 Latency,245.6255,ms,Key lookup user_id
+CognoDB Cloud,Point Lookup,p95 Latency,317.535,ms,Key lookup user_id
+CognoDB Cloud,Indexed Filtered Lookup,p50 Latency,280.6959,ms,WHERE age=25 AND gender=1 LIMIT 100
+CognoDB Cloud,Indexed Filtered Lookup,p95 Latency,298.0597,ms,WHERE age=25 AND gender=1 LIMIT 100
+CognoDB Cloud,Aggregation,p50 Latency,394.1541,ms,"GROUP BY gender, COUNT, AVG(age)"
+CognoDB Cloud,Aggregation,p95 Latency,485.352,ms,"GROUP BY gender, COUNT, AVG(age)"
+CognoDB Cloud,Concurrent Mixed R/W,Sustained QPS,13.64,QPS,"4 workers, 80% read / 20% write, 10s"
+CognoDB Cloud,Resource Footprint,Observable Memory RSS,Not observable,Memory,512 MB
